@@ -1,0 +1,11 @@
+# Ignore all files
+*
+
+# Except .py files
+!*.py
+
+# And these .txt files
+!*charge_accounts.txt
+!*golf.txt
+!*text.txt
+!*WorldSeriesWinners.txt
