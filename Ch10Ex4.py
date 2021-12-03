@@ -12,9 +12,9 @@ def main():
     welcome()
 
     # Create three instances of Employee class
-    emp1 = employee.Employee(name, id_number, department, title)
-    emp2 = employee.Employee(name, id_number, department, title)
-    emp3 = employee.Employee(name, id_number, department, title)
+    emp1 = employee.Employee(name, idNumber, department, title)
+    emp2 = employee.Employee(name, idNumber, department, title)
+    emp3 = employee.Employee(name, idNumber, department, title)
 
     # Display employee 1 data
     print('Employee 1:')
@@ -36,8 +36,8 @@ welcome():
 # Call main function
 main()
 
-"""
+'''
 Output will go here
 
 ------------------------ Class emp.py --------------------
-"""
+'''
