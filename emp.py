@@ -2,26 +2,26 @@
 class Employee:
     # Initialize employee attributes
     def __init__(self, name, id_number, department, title):
-        self.name = name
-        self.idNumber = idNumber
-        self.department = department
-        self.title = title
+        self.__name = name
+        self.__idNumber = idNumber
+        self.__department = department
+        self.__title = title
 
     # Accepts an argument for employee name
     def setName(self, name):
-        self.name = name
+        self.__name = name
 
     # Accepts an argument for employee id
     def setIdNumber(self, idNumber):
-        self.idNumber = idNumber
+        self.__idNumber = idNumber
 
     # Accepts an argument for employee department
     def setDepartment(self, department):
-        self.department = department
+        self.__department = department
 
     # Accepts an argument for employee title
     def setTitle(self, title):
-        self.title = title
+        self.__title = title
 
     # Returns employee name
     def getName(self):
