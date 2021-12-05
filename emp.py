@@ -1,7 +1,7 @@
 # Employee class
 class Employee:
     # Initialize employee attributes
-    def __init__(self, name, id_number, department, title):
+    def __init__(self, name, idNumber, department, title):
         self.__name = name
         self.__idNumber = idNumber
         self.__department = department
@@ -41,6 +41,9 @@ class Employee:
 
     # Returns employee object's state as a string
     def __str__(self):
-        result =
+        result = f'Name: {self.__name}\n' + \
+        f'ID Number: {self.__idNumber}\n' + \
+        f'Department: {self.__department}\n' + \
+        f'Job Title: {self.__title}\n'
 
         return result
