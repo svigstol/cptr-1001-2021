@@ -8,14 +8,14 @@ import emp
 
 # Define main function
 def main():
-    # Call welcome function
-    welcome()
-
     # Create three instances of Employee class
     emp1 = emp.Employee('Susan Meyers', '47899', 'Accounting', 'Vice President')
     emp2 = emp.Employee('Mark Jones', '39119', 'IT', 'Programmer')
     emp3 = emp.Employee('Joy Rogers', '81774', 'Manufacturing', 'Engineer')
 
+    # Call welcome function
+    welcome()
+    
     # Display employee 1 data
     print('Employee 1:')
     print('------------')
