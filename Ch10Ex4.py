@@ -15,7 +15,7 @@ def main():
 
     # Call welcome function
     welcome()
-    
+
     # Display employee 1 data
     print('Employee 1:')
     print('------------')
