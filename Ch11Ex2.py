@@ -28,6 +28,7 @@ def main():
                                   workerShift, workerPay)
 
     # Display worker information
+    print()
     print('Production Worker Profile:')
     print('--------------------------')
     print('Name:', worker.get_name())
@@ -39,20 +40,21 @@ def main():
 # Define welcome message function
 def welcome():
     # Student name must be first line of output
-    print('Sarah Vigstol', \)
+    print('Sarah Vigstol')
+    print()
 
 # Call main function
 main()
 
 
 # Program output
-''''
+'''
 # Employee class
 class Employee:
     def __init__(self, name, idNumber):
         # Initialize name and idNumber attributes
         self.__name = name
-        self.__id_number = idNumber
+        self.__idNumber = idNumber
 
     # Setters for name and idNumber attributes
     def set_name(self, name):

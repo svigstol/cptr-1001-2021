@@ -1,8 +1,9 @@
+# Employee class
 class Employee:
     def __init__(self, name, idNumber):
         # Initialize name and idNumber attributes
         self.__name = name
-        self.__id_number = idNumber
+        self.__idNumber = idNumber
 
     # Setters for name and idNumber attributes
     def set_name(self, name):
