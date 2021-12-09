@@ -1,7 +1,7 @@
 # Ch11Ex2.py
 # Ch11Ex2
 # Sarah Vigstol
-# Program description
+# This program creates a ShiftSupervisor object, prompts the user for attribute data, then displays the entered data
 
 # Import module
 import empex11
@@ -14,28 +14,29 @@ def main():
     # Local variables
     workerName= ''
     workerId = ''
-    workerShift = 0
-    workerPay = 0.0
+    workerSalary = 0.0
+    workerBonus = 0.0
 
     # Get data attributes
     workerName = input('Enter worker name: ')
     workerId = input('Enter worker ID number: ')
-    workerShift = int(input('Enter shift number: '))
-    workerPay = float(input('Enter hourly pay rate: '))
+    workerSalary = float(input('Enter annual salary: '))
+    workerBonus = float(input('Enter production bonus: '))
 
-    # Create an instance of ProductionWorker
-    worker = empex11.ProductionWorker(workerName, workerId, \
-                                  workerShift, workerPay)
+    # Create an instance of ShiftSupervisor
+    worker = empex11.ShiftSupervisor(workerName, workerId, \
+                                  workerSalary, workerBonus)
 
-    # Display worker information
+    # Display supervisor information
     print()
-    print('Production Worker Profile:')
+    print('Shift Supervisor Profile:')
     print('--------------------------')
     print('Name:', worker.get_name())
-    print('ID number:', worker.get_idNumber())
-    print('Shift:', worker.get_shiftNumber())
-    print('Hourly Pay Rate: $', \
-           format(worker.get_payRate(), ',.2f'), sep='')
+    print('ID Number:', worker.get_idNumber())
+    print('Annual Salary: $', \
+           format(worker.get_annualSalary(), ',.2f'), sep='')
+    print('Production Bonus: $', \
+           format(worker.get_bonus(), ',.2f'), sep='')
 
 # Define welcome message function
 def welcome():
@@ -49,7 +50,24 @@ main()
 
 # Program output
 '''
+========== RESTART: C:\Users\Lutefisk\github\cptr-1001-2021\Ch11Ex2.py =========
+Sarah Vigstol
+
+Enter worker name: James Smith
+Enter worker ID number: 2468
+Enter annual salary: 97531.55
+Enter production bonus: 5000
+
+Shift Supervisor Profile:
+--------------------------
+Name: James Smith
+ID Number: 2468
+Annual Salary: $97,531.55
+Production Bonus: $5,000.00
+'''
+
 # Employee class
+'''
 class Employee:
     def __init__(self, name, idNumber):
         # Initialize name and idNumber attributes
@@ -93,4 +111,30 @@ class ProductionWorker(Employee):
 
     def get_payRate(self):
         return self.__payRate
+
+# ShiftSupervisor subclass
+class ShiftSupervisor(Employee):
+    def __init__(self, name, idNumber, annualSalary, bonus):
+        # Call superclass __init__ method
+        Employee.__init__(self, name, idNumber)
+
+        # Initialize annualSalary and bonus attributes
+        self.__annualSalary = annualSalary
+        self.__bonus = bonus
+
+    # Setters for annualSalary and bonus attributes
+    def set_annualSalary(self, annualSalary):
+        self.__annualSalary = annualSalary
+
+    def set_bonus(self, bonus):
+        self.__bonus = __bonus
+
+    # Getters for annualSalary and bonus attributes
+    def get_annualSalary(self):
+        return self.__annualSalary
+
+    def get_bonus(self):
+        return self.__bonus
 '''
+
+

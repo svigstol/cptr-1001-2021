@@ -42,3 +42,27 @@ class ProductionWorker(Employee):
 
     def get_payRate(self):
         return self.__payRate
+
+# ShiftSupervisor subclass
+class ShiftSupervisor(Employee):
+    def __init__(self, name, idNumber, annualSalary, bonus):
+        # Call superclass __init__ method
+        Employee.__init__(self, name, idNumber)
+
+        # Initialize annualSalary and bonus attributes
+        self.__annualSalary = annualSalary
+        self.__bonus = bonus
+
+    # Setters for annualSalary and bonus attributes
+    def set_annualSalary(self, annualSalary):
+        self.__annualSalary = annualSalary
+
+    def set_bonus(self, bonus):
+        self.__bonus = __bonus
+
+    # Getters for annualSalary and bonus attributes
+    def get_annualSalary(self):
+        return self.__annualSalary
+
+    def get_bonus(self):
+        return self.__bonus
